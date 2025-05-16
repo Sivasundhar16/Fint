@@ -14,7 +14,7 @@ export const allUsers = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    return ApiRes(req, 500, "Internal Server Error");
+    return ApiRes(req, 500, "Internal server Error");
   }
 };
 export const getsingleUser = async () => {
