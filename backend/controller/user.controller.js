@@ -17,7 +17,7 @@ export const allUsers = async (req, res) => {
     return ApiRes(req, 500, "Internal server Error");
   }
 };
-export const getsingleUser = async () => {
+export const getsingleUser = async (req, res) => {
   const { id } = req.params;
   try {
     if (!id) {
@@ -39,4 +39,4 @@ export const getsingleUser = async () => {
     return ApiRes(req, 500, "Server Error");
   }
 };
-export const userStatus = async () => {};
+export const userStatus = async (req, res) => {};

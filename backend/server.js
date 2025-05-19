@@ -22,9 +22,9 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 app.use("/api", adminAuthRoute);
-app.use("/api", addsRoute);
 app.use("/api", userRoute);
 app.use("/api", coupenRoute);
+app.use("/api", addsRoute);
 app.use("/api", paymentRoute);
 app.use("/api", bloodRequestroute);
 
